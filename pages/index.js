@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 import withAnalytics from '../src/hocs/withAnalytics';
 
@@ -18,6 +19,9 @@ const Home = () => {
       </Head>
       <div>
         <Title>Hello, World!</Title>
+        <Link href="/about">
+          <a>About us</a>
+        </Link>
       </div>
     </>
   );
